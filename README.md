@@ -11,23 +11,13 @@ Only tested on Psych Engine icons but should work for any icon sheet that is 150
 ### Windows
 **Download**: [Get the executable here](https://github.com/sirthegamercoder/FNF-Icon-Splitter-PLUS/releases)
 
-### Mac OSX
-1. Download and Install Python 3.13. You can download Python here: [https://www.python.org/downloads/](https://www.python.org/downloads/macos/)
-2. Go to Applications > Utilities and open Terminal.
-3. Type `python --version` to ensure that Python gets recognized by your system. If it returns the python version properly, proceed to step 4.
-4. Type `python -m ensurepip`. After it's installed, make sure pip gets recognized by your system by typing: `pip --version` befoe proceeding to step 5.
-5. Type `pip install pillow` to install PIL.
-6. Type `pip install requests` to install Requests.
-
-You should now be able to run the "FNF Icon Splitter PLUS.py" file by double clicking it. 
-If not, then open a terminal window in the same folder as the script and type `python FNF Icon Splitter PLUS.py`, or drag and drop the file on the python application. 
-
-### Linux (Ubuntu / Debian based)
-1. Open the terminal.
-2. Type `sudo apt install python3.13` and install (if it's not already installed).
-3. Type `sudo apt install python3-pip` and install (if it's not already installed)
-4. Type `sudo pip3 install pillow` to install PIL.
-5. Type `sudo pip3 install requests` to install Requests.
-
-You should now be able to run the "FNF Icon Splitter PLUS.py" file by double clicking it. 
-If not, then open a terminal window in the same folder as the script and type `python3 FNF Icon Splitter PLUS.py`.
+### Command Prompt
+1. Press Code button and download the zip
+2. Open File Explorer then find the directory where zip file was downloaded
+3. Extract zip once extracted open the folder and click `FNF Icon Splitter PLUS.py` then click `Copy Path`
+4. After that press Win + R then type cmd
+5. In cmd type `python` space then paste the path and enter
+6. Afterward, press `Select Icons Directory` then find the folder containing icons
+7. Then press `Select Save Directory` then search for the directory you want to save
+8. Press `Start Processing` and enter the number of frame (e.g 1-3 must comma separated)
+9. Wait until appear a folder containing icons and done
