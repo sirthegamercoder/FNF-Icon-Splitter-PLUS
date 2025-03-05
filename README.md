@@ -21,3 +21,5 @@ Only tested on Psych Engine icons but should work for any icon sheet that is 150
 7. Then press `Select Save Directory` then search for the directory you want to save
 8. Press `Start Processing` and enter the number of frame (e.g 1-3 must comma separated)
 9. Wait until appear a folder containing icons and done
+
+*Tip: If you have GitZip extension you just click checkbox at `FNF Icon Splitter PLUS.py` then download checked item*
