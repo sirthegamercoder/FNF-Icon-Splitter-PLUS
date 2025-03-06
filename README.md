@@ -30,7 +30,7 @@ Only tested on Psych Engine icons but should work for any icon sheet that is 150
 8. Press `Start Processing` and enter the number of frame (e.g 1-3)
 9. Wait until appear a folder containing icons
 
-*Tips: If you have GitZip extension you just click checkbox at `FNF Icon Splitter PLUS.py` then download checked item, when enter number of frame must comma separated*
+*Tips: If you have GitZip extension you just click checkbox at `FNF Icon Splitter PLUS.py` then download checked item*
 
 # Credits
 * MeguminBOT aka AutisticLulu - Original of FNF Icon Splitter
