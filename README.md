@@ -3,8 +3,7 @@ This tool simplifies the process of extracting frames from icon spritesheets, or
 It's designed to streamline your workflow by automating tedious tasks.
 
 ## Functionality
-* Extracts and organizes frames of Friday Night Funkin icons 
-Only tested on Psych Engine icons but should work for any icon sheet that is 150 pixels in height and is a multiple of 150 pixels in width
+* Extracts and organizes frames of Friday Night Funkin icons, work for any icon sheet that is 150 pixels in height and is a multiple of 150 pixels in width
 * Selection of specific sprites
 
 ## How to Install
