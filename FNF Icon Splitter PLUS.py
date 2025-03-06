@@ -65,7 +65,7 @@ def get_selected_frames():
 
 root = tk.Tk()
 root.title("FNF Icon Splitter PLUS")
-root.geometry("500x400")
+root.geometry("500x300")
 root.configure(bg="#f0f0f0")
 
 title_label = tk.Label(root, text="FNF Icon Splitter PLUS", font=("Helvetica", 16, "bold"), bg="#f0f0f0")
