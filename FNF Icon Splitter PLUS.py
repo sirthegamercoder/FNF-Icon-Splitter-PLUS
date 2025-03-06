@@ -98,7 +98,7 @@ progress_bar.pack(pady=20)
 process_button = tk.Button(root, text="Start Processing", command=lambda: split_icons(input_dir.get(), output_dir.get(), get_selected_frames(), progress_var, root), bg="#4CAF50", fg="white")
 process_button.pack(pady=10)
 
-author_label = tk.Label(root, text="Tool improved by MTGC aka MTGM\nTool written by AutisticLulu", bg="#f0f0f0")
+author_label = tk.Label(root, text="Tool improved by sirthegamercoder\nTool written by AutisticLulu", bg="#f0f0f0")
 author_label.pack(side='bottom', pady=5)
 
 root.mainloop()
