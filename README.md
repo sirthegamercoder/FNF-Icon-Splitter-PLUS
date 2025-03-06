@@ -9,6 +9,7 @@ It's designed to streamline your workflow by automating tedious tasks.
 ## How to Install
 ### Windows (Method 1)
 **Download**: [Get the zip here](https://github.com/sirthegamercoder/FNF-Icon-Splitter-PLUS/releases)
+
 **Alternate Download**:
 <a href="https://gamebanana.com/tools/19303"><img src="https://gamebanana.com/tools/embeddables/19303?type=large"/></a>
 1. Go to File Explorer then find directory where the zip file downloaded
