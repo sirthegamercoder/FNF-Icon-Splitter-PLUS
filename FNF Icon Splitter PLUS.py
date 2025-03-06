@@ -60,7 +60,7 @@ def split_icons(input_dir, save_location, selected_frames, progress_var, root):
 def get_selected_frames():
     input_frames = simpledialog.askstring("Input", "Enter the frame numbers to extract (comma-separated):")
     if input_frames:
-        return [int(x.strip()) for x in input_frames.split(',') if x.strip().isdigit()]
+        return [int(x.strip()) - 1 for x in input_frames.split(',') if x.strip().isdigit()]
     return []
 
 root = tk.Tk()
