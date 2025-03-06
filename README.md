@@ -8,10 +8,18 @@ Only tested on Psych Engine icons but should work for any icon sheet that is 150
 * Selection of specific sprites
 
 ## How to Install
-### Windows
-**Download**: [Get the executable here](https://github.com/sirthegamercoder/FNF-Icon-Splitter-PLUS/releases)
+### Windows (Method 1)
+**Download**: [Get the zip here](https://github.com/sirthegamercoder/FNF-Icon-Splitter-PLUS/releases)
+1. Go to File Explorer then find directory where the zip file downloaded
+2. Extract zip file
+3. Wait until done after that open the folder and click `setup.bat` (if package does not installed)
+4. Afterward, click `FNF Icon Splitter PLUS`
+5. Press `Select Icons Directory` then find the folder containing icons
+7. Then press `Select Save Directory` then search for the directory you want to save
+8. Press `Start Processing` and enter the number of frame (e.g 1-3)
+9. Wait until appear a folder containing icons
 
-### Command Prompt
+### Command Prompt (Method 2)
 1. Press Code button and download the zip
 2. Open File Explorer then find the directory where zip file was downloaded
 3. Extract zip once extracted open the folder and click `FNF Icon Splitter PLUS.py` then click `Copy Path`
@@ -20,6 +28,10 @@ Only tested on Psych Engine icons but should work for any icon sheet that is 150
 6. Afterward, press `Select Icons Directory` then find the folder containing icons
 7. Then press `Select Save Directory` then search for the directory you want to save
 8. Press `Start Processing` and enter the number of frame (e.g 1-3)
-9. Wait until appear a folder containing icons and done
+9. Wait until appear a folder containing icons
 
-*Tip: If you have GitZip extension you just click checkbox at `FNF Icon Splitter PLUS.py` then download checked item, when enter number of frame must comma separated*
+*Tips: If you have GitZip extension you just click checkbox at `FNF Icon Splitter PLUS.py` then download checked item, when enter number of frame must comma separated*
+
+# Credits
+* MeguminBOT aka AutisticLulu - Original of FNF Icon Splitter
+* MTGC aka sirthegamercoder - Improve FNF Icon Splitter
