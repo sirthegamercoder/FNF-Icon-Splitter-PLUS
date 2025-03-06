@@ -12,11 +12,11 @@ Only tested on Psych Engine icons but should work for any icon sheet that is 150
 **Download**: [Get the zip here](https://github.com/sirthegamercoder/FNF-Icon-Splitter-PLUS/releases)
 1. Go to File Explorer then find directory where the zip file downloaded
 2. Extract zip file
-3. Wait until done after that open the folder and click `setup.bat` (if package does not installed)
+3. Wait until done after that open the folder and click `setup.bat` *(if package does not installed)*
 4. Afterward, click `FNF Icon Splitter PLUS`
 5. Press `Select Icons Directory` then find the folder containing icons
 7. Then press `Select Save Directory` then search for the directory you want to save
-8. Press `Start Processing` and enter the number of frame (e.g 1-3)
+8. Press `Start Processing` and enter the number of frame (e.g 1,2 or 1,2,3)
 9. Wait until appear a folder containing icons
 
 ### Command Prompt (Method 2)
@@ -27,7 +27,7 @@ Only tested on Psych Engine icons but should work for any icon sheet that is 150
 5. In cmd type `python` space then paste the path and enter
 6. Afterward, press `Select Icons Directory` then find the folder containing icons
 7. Then press `Select Save Directory` then search for the directory you want to save
-8. Press `Start Processing` and enter the number of frame (e.g 1-3)
+8. Press `Start Processing` and enter the number of frame (e.g 1,2 or 1,2,3)
 9. Wait until appear a folder containing icons
 
 *Tips: If you have GitZip extension you just click checkbox at `FNF Icon Splitter PLUS.py` then download checked item*
