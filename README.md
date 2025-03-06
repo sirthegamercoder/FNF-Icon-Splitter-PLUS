@@ -6,6 +6,12 @@ It's designed to streamline your workflow by automating tedious tasks.
 * Extracts and organizes frames of Friday Night Funkin icons, work for any icon sheet that is 150 pixels in height and is a multiple of 150 pixels in width
 * Selection of specific sprites
 
+## Not yet implemented
+* Error Handling
+* User Input Validation
+* Progress Bar Updates
+* User Interface Enhancements
+
 ## How to Install
 ### Windows (Method 1)
 **Download**: [Get the zip here](https://github.com/sirthegamercoder/FNF-Icon-Splitter-PLUS/releases)
