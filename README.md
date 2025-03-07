@@ -11,6 +11,9 @@ It's designed to streamline your workflow by automating tedious tasks.
 * User Input Validation (Cleared)
 * Progress Bar Updates (Cleared)
 * User Interface Enhancements (Cleared)
+* Functionality Improvements
+* Code Optimization
+* Modernization
 
 ## How to Install
 ### Windows (Method 1)
