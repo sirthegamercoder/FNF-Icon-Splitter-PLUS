@@ -5,7 +5,11 @@ from tkinter import filedialog, ttk, messagebox, simpledialog
 from PIL import Image
 
 def count_png_files(input_dir):
-    return sum(1 for filename in os.listdir(input_dir) if filename.endswith('.png'))
+    try:
+        return sum(1 for filename in os.listdir(input_dir) if filename.endswith('.png'))
+    except Exception as e:
+        messagebox.showerror("Error", f"Failed to count PNG files: {e}")
+        return 0
 
 def sanitize_filename(name):
     return re.sub(r'[\\/:*?"<>|]', '_', name)
@@ -24,14 +28,26 @@ def crop_transparency(image):
     return image
 
 def split_icons(input_dir, save_location, selected_frames, progress_var, root):
+    if not selected_frames:
+        messagebox.showwarning("Warning", "No frames selected for extraction.")
+        return
+
     progress_var.set(0)
     total_files = count_png_files(input_dir)
+    if total_files == 0:
+        messagebox.showwarning("Warning", "No PNG files found in the selected directory.")
+        return
+
     progress_bar["maximum"] = total_files
 
     for filename in os.listdir(input_dir):
         if filename.endswith(".png"):
             full_path = os.path.join(input_dir, filename)
-            spritesheet = Image.open(full_path)
+            try:
+                spritesheet = Image.open(full_path)
+            except Exception as e:
+                messagebox.showerror("Error", f"Failed to open image {filename}: {e}")
+                continue
 
             width, height = spritesheet.size
             frames = []
@@ -44,31 +60,45 @@ def split_icons(input_dir, save_location, selected_frames, progress_var, root):
                     frame = spritesheet.crop((left, upper, right, lower))
                     frames.append(frame)
 
-            cropped_frames = [crop_transparency(frames[i]) for i in selected_frames]
+            try:
+                cropped_frames = [crop_transparency(frames[i]) for i in selected_frames]
+            except IndexError as e:
+                messagebox.showerror("Error", f"Frame index out of range: {e}")
+                continue
 
             file_folder = sanitize_filename(os.path.splitext(filename)[0])
             file_save_location = os.path.join(save_location, file_folder)
             os.makedirs(file_save_location, exist_ok=True)
             for i, frame in enumerate(cropped_frames):
                 frame_filename = f'frame_{i}.png'
-                frame.save(os.path.join(file_save_location, frame_filename))
+                try:
+                    frame.save(os.path.join(file_save_location, frame_filename))
+                except Exception as e:
+                    messagebox.showerror("Error", f"Failed to save frame {frame_filename}: {e}")
+                    continue
                 progress_var.set((i + 1) / len(cropped_frames) * 100)
                 root.update_idletasks()
+
+            progress_var.set((progress_var.get() + 100 / total_files) if total_files > 0 else 100)
+            root.update_idletasks()
 
     messagebox.showinfo("Information", "Finished processing all files.")
 
 def get_selected_frames():
     input_frames = simpledialog.askstring("Input", "Enter the frame numbers to extract (comma-separated):")
     if input_frames:
-        return [int(x.strip()) - 1 for x in input_frames.split(',') if x.strip().isdigit()]
+        try:
+            return [int(x.strip()) - 1 for x in input_frames.split(',') if x.strip().isdigit()]
+        except ValueError:
+            messagebox.showerror("Error", "Invalid input. Please enter valid frame numbers.")
     return []
 
 root = tk.Tk()
 root.title("FNF Icon Splitter PLUS")
-root.geometry("500x300")
+root.geometry("600x400")
 root.configure(bg="#f0f0f0")
 
-title_label = tk.Label(root, text="FNF Icon Splitter PLUS", font=("Helvetica", 16, "bold"), bg="#f0f0f0")
+title_label = tk.Label(root, text="FNF Icon Splitter PLUS", font=("Helvetica", 18, "bold"), bg="#f0f0f0")
 title_label.pack(pady=10)
 
 input_frame = tk.Frame(root, bg="#f0f0f0")
@@ -92,10 +122,10 @@ output_button = tk.Button(output_frame, text="Select Save Directory", command=la
 output_button.pack(side='left', padx=5)
 
 progress_var = tk.DoubleVar()
-progress_bar = ttk.Progressbar(root, length=300, variable=progress_var)
+progress_bar = ttk.Progressbar(root, length=400, variable=progress_var)
 progress_bar.pack(pady=20)
 
-process_button = tk.Button(root, text="Start Processing", command=lambda: split_icons(input_dir.get(), output_dir.get(), get_selected_frames(), progress_var, root), bg="#4CAF50", fg="white")
+process_button = tk.Button(root, text="Start Processing", command=lambda: split_icons(input_dir.get(), output_dir.get(), get_selected_frames(), progress_var, root), bg="#4CAF50", fg="white", font=("Helvetica", 12))
 process_button.pack(pady=10)
 
 author_label = tk.Label(root, text="Tool improved by sirthegamercoder\nTool written by AutisticLulu", bg="#f0f0f0")
