@@ -5,8 +5,10 @@ It's designed to streamline your workflow by automating tedious tasks.
 ## Functionality
 * Extracts and organizes frames of Friday Night Funkin icons, work for any icon sheet that is 150 pixels in height and is a multiple of 150 pixels in width
 * Selection of specific sprites
+* Error Handling
+* User Input Validation
 
-## Not yet implemented
+## Todos
 * Error Handling (Cleared)
 * User Input Validation (Cleared)
 * Progress Bar Updates (Cleared)
