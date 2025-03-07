@@ -7,10 +7,10 @@ It's designed to streamline your workflow by automating tedious tasks.
 * Selection of specific sprites
 
 ## Not yet implemented
-* Error Handling
-* User Input Validation
-* Progress Bar Updates
-* User Interface Enhancements
+* Error Handling (Cleared)
+* User Input Validation (Cleared)
+* Progress Bar Updates (Cleared)
+* User Interface Enhancements (Cleared)
 
 ## How to Install
 ### Windows (Method 1)
