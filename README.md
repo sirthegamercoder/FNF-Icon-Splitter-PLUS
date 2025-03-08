@@ -7,6 +7,7 @@ It's designed to streamline your workflow by automating tedious tasks.
 * Selection of specific sprites
 * Error Handling
 * User Input Validation
+* Dark Mode (not toggle)
 
 ## Todos
 * Error Handling (Cleared)
