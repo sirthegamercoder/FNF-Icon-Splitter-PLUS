@@ -22,7 +22,8 @@ It's designed to streamline your workflow by automating tedious tasks.
 **Download**: [Get the zip here](https://github.com/sirthegamercoder/FNF-Icon-Splitter-PLUS/releases)
 
 **Alternate Download**:
-<a href="https://gamebanana.com/tools/19303"><img src="https://gamebanana.com/tools/embeddables/19303?type=large"/></a>
+
+<a href="https://gamebanana.com/tools/19303"><img src="https://gamebanana.com/tools/embeddables/19303?type=medium"/></a>
 1. Go to File Explorer then find directory where the zip file downloaded
 2. Extract zip file
 3. Wait until done after that open the folder and click `setup.bat` *(if package does not installed)*
