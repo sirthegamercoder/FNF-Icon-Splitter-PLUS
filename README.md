@@ -13,9 +13,9 @@ It's designed to streamline your workflow by automating tedious tasks.
 * User Input Validation (Cleared)
 * Progress Bar Updates (Cleared)
 * User Interface Enhancements (Cleared)
-* Dark Mode
-* Code Optimization
-* Overhaul UI
+* Dark Mode (Cleared)
+* Code Optimization (Cleared)
+* Overhaul UI (Cleared)
 
 ## How to Install
 ### Windows (Method 1)
